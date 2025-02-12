@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>To-Do List</h2>
+        <form id="todoForm">
+            <input type="text" id="taskInput" placeholder="Add a new task" required>
+            <button type="submit">Add</button>
+            <p id="errorMsg" class="error" hidden>Please enter a valid task.</p>
+        </form>
+        <ul id="taskList"></ul>
+        <p class="completed-tasks">Tasks Completed: <span id="completedCount">0</span> | Tasks Remaining: <span id="remainingCount">0</span></p>
+    </div>
+</body>
+</html>
